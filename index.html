@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Flight Trivia</title>
+  <meta name="description" content="Free English football knowledge quiz. Test your trivia on clubs, nicknames, stadiums and history." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- SPLASH -->
+    <section id="screen-splash" class="screen active">
+      <div class="splash-inner">
+        <div class="ball">⚽</div>
+        <h1>Top Flight Trivia</h1>
+        <p class="tagline">English Football Knowledge Challenge</p>
+        <div class="loader"><div class="loader-bar"></div></div>
+      </div>
+    </section>
+
+    <!-- NAME ENTRY -->
+    <section id="screen-name" class="screen">
+      <div class="card">
+        <h2>Welcome, manager!</h2>
+        <p>What should we call you?</p>
+        <input id="nameInput" type="text" maxlength="16" placeholder="Enter your name" autocomplete="off"/>
+        <button id="nameBtn" class="btn primary">Kick Off</button>
+        <p id="welcomeBack" class="muted"></p>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="screen-menu" class="screen">
+      <div class="card">
+        <h2 id="menuGreeting">Hello!</h2>
+        <p class="muted">Pick a category to test your knowledge.</p>
+        <div class="category-grid" id="categoryGrid"></div>
+        <div class="menu-footer">
+          <span>🏆 Best: <strong id="bestScore">0</strong></span>
+          <button id="changeNameBtn" class="btn ghost">Change Name</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="screen-quiz" class="screen">
+      <div class="card">
+        <div class="quiz-top">
+          <span id="quizCategory" class="badge"></span>
+          <span id="quizProgress" class="muted"></span>
+        </div>
+        <div class="progress"><div id="progressFill" class="progress-fill"></div></div>
+        <h2 id="questionText">Question</h2>
+        <div id="answers" class="answers"></div>
+        <div id="feedback" class="feedback"></div>
+        <button id="nextBtn" class="btn primary hidden">Next</button>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section id="screen-result" class="screen">
+      <div class="card center">
+        <div id="resultEmoji" class="ball">🏆</div>
+        <h2 id="resultTitle">Full Time!</h2>
+        <p id="resultScore" class="big-score">0 / 0</p>
+        <p id="resultMessage" class="muted"></p>
+        <div class="row">
+          <button id="againBtn" class="btn primary">Play Again</button>
+          <button id="menuBtn" class="btn ghost">Main Menu</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="disclaimer">
+    Unofficial fan-made trivia. Not affiliated with any club or league.
+    Team and player names used for factual reference only.
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "footy-quiz",
+  "version": "1.0.0",
+  "description": "A free, browser-based English football knowledge quiz.",
+  "private": true,
+  "keywords": [
+    "trivia",
+    "quiz",
+    "football",
+    "soccer",
+    "vanilla-js"
+  ],
+  "author": "Lemuel",
+  "license": "MIT",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --directory src",
+    "test": "node tests/smoke.test.js",
+    "format": "prettier --write \"src/**/*.{html,css,js}\" \"tests/**/*.js\" \"*.md\"",
+    "format:check": "prettier --check \"src/**/*.{html,css,js}\" \"tests/**/*.js\" \"*.md\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

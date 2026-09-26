@@ -3,7 +3,7 @@
 A free, browser-based English football knowledge quiz. Test your memory on club
 nicknames, stadiums, kits, and history. No sign-up, no ads, no tracking.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://YOUR_USERNAME.github.io/footy-quiz/)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://lemuelowusuansah.github.io/Top-Flight-Trivia/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Made with Vanilla JS](https://img.shields.io/badge/Made%20with-Vanilla%20JS-f7df1e)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
@@ -41,8 +41,8 @@ questions per round. Names and personal bests are stored locally via
 
 No build step required.
 
-    git clone https://github.com/YOUR_USERNAME/footy-quiz.git
-    cd footy-quiz
+    git clone https://github.com/LemuelOwusuAnsah/Top-Flight-Trivia.git
+    cd Top-Flight-Trivia
     xdg-open src/index.html      # Linux
     # open src/index.html        # macOS
     # start src/index.html       # Windows
@@ -54,7 +54,7 @@ Or serve it with any static server:
 
 ### Play online
 
-Live demo: https://YOUR_USERNAME.github.io/footy-quiz/
+Live demo: https://lemuelowusuansah.github.io/Top-Flight-Trivia/
 
 ## How to Play
 
@@ -66,7 +66,7 @@ Live demo: https://YOUR_USERNAME.github.io/footy-quiz/
 
 ## Project Structure
 
-    footy-quiz/
+    Top-Flight-Trivia/
     ├── .github/
     │   └── workflows/
     │       └── deploy.yml          Auto-deploy to GitHub Pages
